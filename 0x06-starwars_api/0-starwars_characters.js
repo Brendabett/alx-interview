@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const request = require(request);
+const request = require('request');
 
-const endpoint = https://swapi-api.hbtn.io/api;
+const endpoint = 'https://swapi-api.hbtn.io/api';
 const filmId = process.argv[2];
 
 request(`${endpoint}/films/${filmId}/`, async function (error, response, body) {
